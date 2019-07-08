@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'CD\'
-                sh 'echo "Fail!"; exit 1'
+                sh 'CD /C'
+                sh 'pwd'
             }
         }
     }
